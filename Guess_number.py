@@ -8,6 +8,7 @@ correct_answer = random.randint(1,10)
 print(correct_answer)
 while number_of_guess > 0 :
 
+
     # User guess the number
     user_guess = input("Guess my number: ")
     user_guess = int(user_guess)
@@ -19,9 +20,9 @@ while number_of_guess > 0 :
         user_guess = True
         break
     elif user_guess > correct_answer:
-        print("Sorry, you guessed too high")
+        print("Sorry, you guessed high")
     elif user_guess < correct_answer:
-        print("Sorry, you guessed too low!")
+        print("Sorry, you guessed low!")
     else:
         print("Incorrect")
 
